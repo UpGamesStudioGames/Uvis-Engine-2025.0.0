@@ -1,0 +1,9 @@
+Cube
+Position: 0, 0, 0
+Rotation: 0, 0, 0
+Sphere
+Position: 0, 0, 0
+Rotation: 0, 0, 0
+DirectionalLight
+Position: 0, 0, 0
+Rotation: 0, 0, 0
