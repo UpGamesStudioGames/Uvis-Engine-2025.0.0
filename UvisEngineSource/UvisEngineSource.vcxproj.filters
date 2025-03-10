@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\imgui">
+      <UniqueIdentifier>{186c1f56-fa07-4c3b-87dc-23c93a60fd38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\imnodes">
+      <UniqueIdentifier>{dc2a8ab1-9c44-4ee5-9f77-f10e281522fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{88d80f8f-5ef5-42f7-85f9-bb9c98212821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source">
+      <UniqueIdentifier>{b37777e8-5fa3-4d2f-ada0-de7e51aebfc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\LinkerLib">
+      <UniqueIdentifier>{b29e44aa-faf9-4bc6-b102-e636b05d6b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\LinkerLib\Linker 1">
+      <UniqueIdentifier>{35ca87fd-da7c-498f-afc5-922f0f90236a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core">
+      <UniqueIdentifier>{ca17aafa-be82-41cd-b95c-b75c57240819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\compoments">
+      <UniqueIdentifier>{6121ef37-b62a-4692-bc14-6f0f53153bf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\compoments\header">
+      <UniqueIdentifier>{4bd4cd82-4ca2-4b18-bacd-1add8a8c675b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\Bianarys">
+      <UniqueIdentifier>{3a7aad07-d7d6-482e-aa9b-7d027e825095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\Bianarys\Windows">
+      <UniqueIdentifier>{e7eae88d-b329-4161-900a-4ddabf429ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\Bianarys\WindowsExp">
+      <UniqueIdentifier>{6018e3a9-653e-48fe-a3ec-8d0efec5ea96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\imgui">
+      <UniqueIdentifier>{3ea04fc4-6d76-476c-a63c-277206b1ce17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\imnodes">
+      <UniqueIdentifier>{41967678-18d8-4d04-8365-b507b6b779a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\visualScripting">
+      <UniqueIdentifier>{43decc6f-e410-43f6-aa98-ea0f6b66c80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\shaders">
+      <UniqueIdentifier>{2303e3e9-05b7-43e1-b2a5-b04da4e4944e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\Render">
+      <UniqueIdentifier>{b9d12bd2-0348-4093-801c-dce6694a3737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\Render\playmode">
+      <UniqueIdentifier>{6dfa80f7-66f3-4ed1-b1f1-b3ffc307b8fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\Scene">
+      <UniqueIdentifier>{24c70bfa-3af9-4098-b2aa-81aa5a5f0bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\Scene\NewFilter1">
+      <UniqueIdentifier>{bbd29e4f-3a78-42fd-9227-928c1f556a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\header">
+      <UniqueIdentifier>{4896c3a9-27dc-4cc6-a07a-753bcb6baa55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Libarys-custom">
+      <UniqueIdentifier>{63dc6337-3520-4787-8298-893a20622738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Libarys-custom\LightLibary">
+      <UniqueIdentifier>{88e2d0d9-26da-4468-a8da-5a58fd7acd2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Libarys-custom\LightLibary\light-render-GLFW">
+      <UniqueIdentifier>{c7b8d27e-81bd-49f7-8d43-d53ba77ed9e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Libarys-custom\LightLibary\header">
+      <UniqueIdentifier>{0ed4b5ef-3c94-470d-afe3-065062525cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\UvisLinker">
+      <UniqueIdentifier>{96933006-e32b-482b-bad5-a9cb2a4620b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\UvisLinker\Linker File">
+      <UniqueIdentifier>{c2b27988-799d-41b8-8366-34370aee56f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_glfw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imnodes\imnodes.cpp">
+      <Filter>Source Files\imnodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Engine\Source\Core\Bianarys\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="WLPI.cpp">
+      <Filter>Engine\Source\Core\Bianarys\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Engine\Source\Core\Bianarys\WindowsExp</Filter>
+    </ClCompile>
+    <ClCompile Include="Linker.cpp">
+      <Filter>Engine\Source\LinkerLib\Linker 1</Filter>
+    </ClCompile>
+    <ClCompile Include="Linker2.cpp">
+      <Filter>Engine\Source\UvisLinker\Linker File</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor.cpp">
+      <Filter>Engine\Source\Core\visualScripting</Filter>
+    </ClCompile>
+    <ClCompile Include="MainCompoment.cpp">
+      <Filter>Engine\Source\Core\compoments</Filter>
+    </ClCompile>
+    <ClCompile Include="GLFWPointLight.cpp">
+      <Filter>Engine\Source\Libarys-custom\LightLibary\light-render-GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Engine\Source\Core\Bianarys</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Engine\Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Engine\Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorPlaymode.cpp">
+      <Filter>Engine\Source\Core\Render\playmode</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCube.cpp">
+      <Filter>Engine\Source\Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSphere.cpp">
+      <Filter>Engine\Source\Core\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_opengl3.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_glfw.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\imgui-1.91.8\imgui-1.91.8\backends\imgui_impl_opengl3_loader.h">
+      <Filter>Engine\Source\Core\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="MainComponent.h">
+      <Filter>Engine\Source\Core\compoments\header</Filter>
+    </ClInclude>
+    <ClInclude Include="imnodes\imnodes.h">
+      <Filter>Engine\Source\Core\imnodes</Filter>
+    </ClInclude>
+    <ClInclude Include="imnodes\imnodes_internal.h">
+      <Filter>Engine\Source\Core\imnodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Linker.h">
+      <Filter>Engine\Source\LinkerLib\Linker 1</Filter>
+    </ClInclude>
+    <ClInclude Include="Linker2.h">
+      <Filter>Engine\Source\UvisLinker\Linker File</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorPlaymode.h">
+      <Filter>Engine\Source\Core\Render\playmode</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects-sphere.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\glew-2.2.0\glew-2.2.0\include\GL\eglew.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\glew-2.2.0\glew-2.2.0\include\GL\glxew.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\glew-2.2.0\glew-2.2.0\include\GL\glew.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\glew-2.2.0\glew-2.2.0\include\GL\wglew.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor.h">
+      <Filter>Engine\Source\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\x64\Release\Bianarys\x32\Uvis-Runtime\assets\WindowsX64Icon\OpenGLWindow\UvisIcon.png" />
+  </ItemGroup>
+</Project>
