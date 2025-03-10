@@ -639,13 +639,13 @@ void render_ui(GLFWwindow* window) {
 
         if (ImGui::BeginPopupContextWindow("ComponentPopup")) {
             if (selectedObject) {
-                ImGui::SetWindowFontScale(1.5f); 
+                ImGui::SetWindowFontScale(1.5f);
 
-                ImGui::Text("Componenets"); 
+                ImGui::Text("Componenets");
 
-              
+
                 ImGui::SetWindowFontScale(1.0f);
-             
+
                 if (ImGui::MenuItem("Cube Render")) {
                     selectedObject->add_component<CubeRender>();
                 }
@@ -661,7 +661,12 @@ void render_ui(GLFWwindow* window) {
                 if (ImGui::MenuItem("Script")) {
                     selectedObject->add_component<Script>();
                 }
+                if (ImGui::MenuItem("Debug Test")) {
+                    log_message("Debugger:::::: SUS", std::to_string(1));
+
+                }
             }
+            
             ImGui::EndPopup();
         }
     }

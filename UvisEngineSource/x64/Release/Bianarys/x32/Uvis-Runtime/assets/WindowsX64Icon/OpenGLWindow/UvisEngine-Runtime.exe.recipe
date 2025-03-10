@@ -2,12 +2,12 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\dev\UvisEngine\UvisEngineSource\UvisEngineSource\x64\Release\Bianarys\x32\Uvis-Runtime\UvisEngine-Runtime.exe</FullPath>
+      <FullPath>C:\Users\silas\Documents\GitHub\Uvis-Engine-2025.0.0\UvisEngineSource\x64\Release\Bianarys\x32\Uvis-Runtime\UvisEngine-Runtime.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\dev\UvisEngine\UvisEngineSource\x64\Release\Bianarys\x32\Uvis-Runtime\assets\WindowsX64Icon\OpenGLWindow\UvisIcon.png</FullPath>
+      <FullPath>C:\Users\silas\Documents\GitHub\Uvis-Engine-2025.0.0\x64\Release\Bianarys\x32\Uvis-Runtime\assets\WindowsX64Icon\OpenGLWindow\UvisIcon.png</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
