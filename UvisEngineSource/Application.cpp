@@ -20,6 +20,7 @@
 #include "stb_image.h"
 #include "ScriptEngine.h"
 #include "Objects.h"
+
 #include "Objects-sphere.h"
 std::string scriptContent = "// Write your script here...\nvoid Update() {\n    // Your code\n}";
 
@@ -40,10 +41,10 @@ public:
     }
 };
 
-void ContentExplorer() {
 
 
-}
+
+
 
 class CubeRender : public Component {
 public:
@@ -291,7 +292,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 void render_scene()
 {
-    ContentExplorer();
+
     glViewport(0, 0, 1280, 720);
     glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
