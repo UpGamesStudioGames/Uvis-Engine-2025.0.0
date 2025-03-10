@@ -192,12 +192,6 @@
     <ClInclude Include="Objects.h" />
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\x64\Release\Bianarys\x32\Uvis-Runtime\assets\WindowsX64Icon\OpenGLWindow\UvisIcon.png">
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
-    </Image>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

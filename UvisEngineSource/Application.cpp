@@ -487,33 +487,10 @@ void ShowPackageManager() {
     if (!showPackageManager) return;
 
     ImGui::SetNextWindowSize(ImVec2(400, 300), ImGuiCond_FirstUseEver);
-    ImGui::Begin("Package Manager", &showPackageManager, ImGuiWindowFlags_NoCollapse);
+    ImGui::Begin("Light Manager", &showPackageManager, ImGuiWindowFlags_NoCollapse);
 
    
-    ImGui::InputText("Search", searchBuffer, IM_ARRAYSIZE(searchBuffer));
-
-  
-    ImGui::Separator();
-    for (auto& package : packages) {
-       
-        if (searchBuffer[0] != '\0' && package.name.find(searchBuffer) == std::string::npos) {
-            continue;
-        }
-
-        ImGui::Text("%s", package.name.c_str());
-        ImGui::SameLine();
-
-        if (package.installed) {
-            if (ImGui::Button(("Uninstall##" + package.name).c_str())) {
-                package.installed = false;
-            }
-        }
-        else {
-            if (ImGui::Button(("Install##" + package.name).c_str())) {
-                package.installed = true;
-            }
-        }
-    }
+ 
 
     ImGui::End();
 }
@@ -525,33 +502,13 @@ void renderLightingManager(int) {
         if (!showPackageManager) return;
 
   
-        ImGui::Begin("Package Manager", &showPackageManager, ImGuiWindowFlags_NoCollapse);
+        ImGui::Begin("Light Manager", &showPackageManager, ImGuiWindowFlags_NoCollapse);
 
 
-        ImGui::InputText("Search", searchBuffer, IM_ARRAYSIZE(searchBuffer));
+       
 
 
-        ImGui::Separator();
-        for (auto& package : packages) {
-
-            if (searchBuffer[0] != '\0' && package.name.find(searchBuffer) == std::string::npos) {
-                continue;
-            }
-
-            ImGui::Text("%s", package.name.c_str());
-            ImGui::SameLine();
-
-            if (package.installed) {
-                if (ImGui::Button(("Uninstall##" + package.name).c_str())) {
-                    package.installed = false;
-                }
-            }
-            else {
-                if (ImGui::Button(("Install##" + package.name).c_str())) {
-                    package.installed = true;
-                }
-            }
-        }
+     
 
         ImGui::End();
     }
@@ -643,12 +600,10 @@ void render_ui(GLFWwindow* window) {
             ImGui::EndMenu();
         }
         if (ImGui::BeginMenu("View")) {
-            if (ImGui::MenuItem("Package Manager")) {
+            if (ImGui::MenuItem("Light Manager")) {
                 showPackageManager = !showPackageManager;
             }
-            if (ImGui::MenuItem("Lighting Manager")) {
-            //    showLightingManager(int 1);
-            }
+         
             ImGui::EndMenu();
         }
         ImGui::EndMainMenuBar();

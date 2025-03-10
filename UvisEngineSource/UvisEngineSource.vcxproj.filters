@@ -240,7 +240,4 @@
       <Filter>Engine\Source\header</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\x64\Release\Bianarys\x32\Uvis-Runtime\assets\WindowsX64Icon\OpenGLWindow\UvisIcon.png" />
-  </ItemGroup>
 </Project>
