@@ -1,9 +1,0 @@
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\imgui\imgui.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\imgui.obj
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\imgui\imgui_demo.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\imgui_demo.obj
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\imgui\imgui_draw.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\imgui_draw.obj
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\imgui\imgui_impl_glfw.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\imgui_impl_glfw.obj
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\imgui\imgui_impl_opengl3.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\imgui_impl_opengl3.obj
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\imgui\imgui_tables.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\imgui_tables.obj
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\imgui\imgui_widgets.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\imgui_widgets.obj
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\meshcollider.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\meshcollider.obj
-C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\window_support.cpp;C:\Users\silas\source\repos\UvisEngineSource\UvisEngineSource\x64\Release\window_support.obj
