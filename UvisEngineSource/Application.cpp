@@ -726,7 +726,7 @@ int selectedAxis = -1;
 
 
 int main() {
-    GLFWwindow* window = init_window(1280, 720, "Uvis Engine");
+    GLFWwindow* window = init_window(1280, 720, "Uvis Engine - < 2025.1.0 > - Main Project");
     
     create_sample_objects();
 
