@@ -108,7 +108,10 @@ struct Light {
 
 Light light = { { 0.0f, 5.0f, 5.0f }, { 1.0f, 1.0f, 1.0f }, 1.0f };
 
+Light LightExit = { { 0.0f, 5.0f, 5.0f }, { 1.0f, 1.0f, 1.0f }, 1.0f };
 
+Light* Baked;
+Light* Realtime;
 
 std::vector<std::string> logMessages;
 int logIndex = 1;
@@ -282,6 +285,9 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         meshRenderMode = !meshRenderMode; 
     }
 }
+
+
+
 
 void render_scene()
 {
@@ -460,6 +466,8 @@ void renderSkybox() {
 
 
 bool showPackageManager = false;
+
+
 char searchBuffer[64] = "";
 
 
@@ -470,10 +478,9 @@ struct Package {
 
 std::vector<Package> packages = {
       
-    {"Physics Engine", false},
-    {"Networking Module", false},
-    {"Audio System", true},
-    {"Scripting API", false}
+    {"Baked Module", false},
+    {"Realtime Module", true},
+
 };
 
 void ShowPackageManager() {
@@ -510,6 +517,46 @@ void ShowPackageManager() {
 
     ImGui::End();
 }
+
+bool showLightingManager = true;
+
+void renderLightingManager(int) {
+    if (showLightingManager) {
+        if (!showPackageManager) return;
+
+  
+        ImGui::Begin("Package Manager", &showPackageManager, ImGuiWindowFlags_NoCollapse);
+
+
+        ImGui::InputText("Search", searchBuffer, IM_ARRAYSIZE(searchBuffer));
+
+
+        ImGui::Separator();
+        for (auto& package : packages) {
+
+            if (searchBuffer[0] != '\0' && package.name.find(searchBuffer) == std::string::npos) {
+                continue;
+            }
+
+            ImGui::Text("%s", package.name.c_str());
+            ImGui::SameLine();
+
+            if (package.installed) {
+                if (ImGui::Button(("Uninstall##" + package.name).c_str())) {
+                    package.installed = false;
+                }
+            }
+            else {
+                if (ImGui::Button(("Install##" + package.name).c_str())) {
+                    package.installed = true;
+                }
+            }
+        }
+
+        ImGui::End();
+    }
+}
+
 
 void render_ui(GLFWwindow* window) {
     ImGui_ImplOpenGL3_NewFrame();
@@ -598,6 +645,9 @@ void render_ui(GLFWwindow* window) {
         if (ImGui::BeginMenu("View")) {
             if (ImGui::MenuItem("Package Manager")) {
                 showPackageManager = !showPackageManager;
+            }
+            if (ImGui::MenuItem("Lighting Manager")) {
+            //    showLightingManager(int 1);
             }
             ImGui::EndMenu();
         }
