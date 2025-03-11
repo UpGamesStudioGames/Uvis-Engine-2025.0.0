@@ -49,9 +49,6 @@
     <Filter Include="Engine\Source\Core\Bianarys\WindowsExp">
       <UniqueIdentifier>{6018e3a9-653e-48fe-a3ec-8d0efec5ea96}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Engine\Source\Core\imgui">
-      <UniqueIdentifier>{3ea04fc4-6d76-476c-a63c-277206b1ce17}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Engine\Source\Core\imnodes">
       <UniqueIdentifier>{41967678-18d8-4d04-8365-b507b6b779a2}</UniqueIdentifier>
     </Filter>
@@ -60,12 +57,6 @@
     </Filter>
     <Filter Include="Engine\Source\Core\shaders">
       <UniqueIdentifier>{2303e3e9-05b7-43e1-b2a5-b04da4e4944e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Engine\Source\Core\Render">
-      <UniqueIdentifier>{b9d12bd2-0348-4093-801c-dce6694a3737}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Engine\Source\Core\Render\playmode">
-      <UniqueIdentifier>{6dfa80f7-66f3-4ed1-b1f1-b3ffc307b8fe}</UniqueIdentifier>
     </Filter>
     <Filter Include="Engine\Source\Core\Scene">
       <UniqueIdentifier>{24c70bfa-3af9-4098-b2aa-81aa5a5f0bbe}</UniqueIdentifier>
@@ -93,6 +84,15 @@
     </Filter>
     <Filter Include="Engine\Source\UvisLinker\Linker File">
       <UniqueIdentifier>{c2b27988-799d-41b8-8366-34370aee56f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\imgui">
+      <UniqueIdentifier>{3ea04fc4-6d76-476c-a63c-277206b1ce17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\imgui\Render">
+      <UniqueIdentifier>{b9d12bd2-0348-4093-801c-dce6694a3737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\imgui\Render\playmode">
+      <UniqueIdentifier>{6dfa80f7-66f3-4ed1-b1f1-b3ffc307b8fe}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -154,7 +154,7 @@
       <Filter>Engine\Source\Core</Filter>
     </ClCompile>
     <ClCompile Include="EditorPlaymode.cpp">
-      <Filter>Engine\Source\Core\Render\playmode</Filter>
+      <Filter>Engine\Source\imgui\Render\playmode</Filter>
     </ClCompile>
     <ClCompile Include="RenderCube.cpp">
       <Filter>Engine\Source\Core\Scene</Filter>
@@ -165,31 +165,31 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imgui_internal.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imgui.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imgui_impl_opengl3.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imgui_impl_glfw.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imstb_truetype.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imstb_textedit.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imstb_rectpack.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imconfig.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\Downloads\imgui-1.91.8\imgui-1.91.8\backends\imgui_impl_opengl3_loader.h">
-      <Filter>Engine\Source\Core\imgui</Filter>
+      <Filter>Engine\Source\imgui</Filter>
     </ClInclude>
     <ClInclude Include="MainComponent.h">
       <Filter>Engine\Source\Core\compoments\header</Filter>
@@ -207,7 +207,7 @@
       <Filter>Engine\Source\UvisLinker\Linker File</Filter>
     </ClInclude>
     <ClInclude Include="EditorPlaymode.h">
-      <Filter>Engine\Source\Core\Render\playmode</Filter>
+      <Filter>Engine\Source\imgui\Render\playmode</Filter>
     </ClInclude>
     <ClInclude Include="Core.h">
       <Filter>Engine\Source\header</Filter>

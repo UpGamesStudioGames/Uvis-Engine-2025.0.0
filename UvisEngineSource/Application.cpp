@@ -144,28 +144,89 @@ public:
 };
 
 
-
 class Camera {
 public:
     float position[3];
-    float rotation[3];  
+    float rotation[2];
+    float speed = 0.1f;
+    float sensitivity = 0.1f;
+    bool rightMouseDown = false;
 
     Camera() {
-        position[0] = position[1] = position[2] = 0.0f;
-        rotation[0] = rotation[1] = rotation[2] = 0.0f;
+        position[0] = position[1] = 0.0f;
+        position[2] = -5.0f;
+        rotation[0] = rotation[1] = 0.0f;
+    }
+
+    void processInput(GLFWwindow* window, double deltaX, double deltaY) {
+        if (rightMouseDown) {
+            rotation[0] += deltaY * sensitivity;
+            rotation[1] += deltaX * sensitivity;
+        }
+    }
+
+    void move(GLFWwindow* window) {
+        float forward[3] = {
+            cos(rotation[1] * 3.14159265f / 180.0f),
+            0.0f,
+            sin(rotation[1] * 3.14159265f / 180.0f)
+        };
+        float right[3] = {
+            sin(rotation[1] * 3.14159265f / 180.0f),
+            0.0f,
+            -cos(rotation[1] * 3.14159265f / 180.0f)
+        };
+        if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+            position[0] += forward[0] * speed;
+            position[2] += forward[2] * speed;
+        }
+        if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+            position[0] -= forward[0] * speed;
+            position[2] -= forward[2] * speed;
+        }
+        if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+            position[0] -= right[0] * speed;
+            position[2] -= right[2] * speed;
+        }
+        if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+            position[0] += right[0] * speed;
+            position[2] += right[2] * speed;
+        }
+        if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) {
+            position[1] += speed;
+        }
+        if (glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS) {
+            position[1] -= speed;
+        }
     }
 
     void apply() {
-      
-        glRotatef(rotation[0], 1.0f, 0.0f, 0.0f); 
-        glRotatef(rotation[1], 0.0f, 1.0f, 0.0f);  
-        glRotatef(rotation[2], 0.0f, 0.0f, 1.0f);  
-        glTranslatef(position[0], position[1], position[2]); 
-
+        glLoadIdentity();
+        glRotatef(-rotation[0], 1.0f, 0.0f, 0.0f); // Pitch (up/down)
+        glRotatef(-rotation[1], 0.0f, 1.0f, 0.0f); // Yaw (left/right)
+        glTranslatef(-position[0], -position[1], -position[2]); // Move the camera
     }
+
 };
 
 Camera camera;
+
+void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
+    static double lastX = xpos, lastY = ypos;
+    double deltaX = xpos - lastX;
+    double deltaY = ypos - lastY;
+    lastX = xpos;
+    lastY = ypos;
+
+    camera.processInput(window, deltaX, deltaY);
+}
+
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods) {
+    if (button == GLFW_MOUSE_BUTTON_RIGHT) {
+        camera.rightMouseDown = (action == GLFW_PRESS);
+        glfwSetInputMode(window, GLFW_CURSOR, camera.rightMouseDown ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL);
+    }
+}
 
 
 
@@ -536,7 +597,18 @@ void render_ui(GLFWwindow* window) {
     style.Colors[ImGuiCol_ButtonActive] = ImVec4(0.4f, 0.4f, 0.4f, 1.0f);
 
     render_scene();
+    ImGui::Begin("Texture Editor");
 
+
+    ImGui::Text("Texture Editor");
+    if (ImGui::Selectable("Texture")) {
+    }
+
+
+
+
+
+    ImGui::End();
     ImGui::Begin("Performance");
     static double lastTime = glfwGetTime();
     static int frameCount = 0;
@@ -731,12 +803,13 @@ int main() {
     create_sample_objects();
 
     while (!glfwWindowShouldClose(window)) {
+        camera.move(window);
         glfwPollEvents();
 
         render_scene();
         render_ui(window);
 
-
+        camera.apply();
         glfwSwapBuffers(window);
     }
 
