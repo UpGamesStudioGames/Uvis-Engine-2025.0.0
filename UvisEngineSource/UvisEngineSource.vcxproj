@@ -129,14 +129,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\silas\Downloads\glew-2.2.0\glew-2.2.0\include;imgui;C:\Users\silas\Downloads\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\silas\Documents\GitHub\Uvis-Engine-2025.0.0\vendor\glew\glew-2.2.0\include;imgui;C:\Users\silas\Documents\GitHub\Uvis-Engine-2025.0.0\vendor\glfw\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\silas\Downloads\glew-2.2.0\glew-2.2.0\include;imgui;C:\Users\silas\Downloads\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\silas\Documents\GitHub\Uvis-Engine-2025.0.0\vendor\glew\glew-2.2.0\include;imgui;C:\Users\silas\Documents\GitHub\Uvis-Engine-2025.0.0\vendor\glfw\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>WindowsMaster.def</ModuleDefinitionFile>
     </Link>
